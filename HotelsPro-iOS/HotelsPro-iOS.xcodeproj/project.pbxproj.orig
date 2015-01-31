@@ -30,10 +30,10 @@
 		53A376261A7CD9BA0043B85F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A376221A7CD9BA0043B85F /* MBProgressHUD.m */; };
 		53A376271A7CD9BA0043B85F /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A376241A7CD9BA0043B85F /* 37x-Checkmark.png */; };
 		53A376281A7CD9BA0043B85F /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A376251A7CD9BA0043B85F /* 37x-Checkmark@2x.png */; };
-		B60DD6D61A7D1D0E00107291 /* STABannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6CF1A7D1D0E00107291 /* STABannerTableViewCell.m */; };
-		B60DD6D71A7D1D0E00107291 /* STAAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D11A7D1D0E00107291 /* STAAddressTableViewCell.m */; };
-		B60DD6D81A7D1D0E00107291 /* STADistanceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D31A7D1D0E00107291 /* STADistanceTableViewCell.m */; };
-		B60DD6D91A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D51A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m */; };
+		B60DD6D61A7D1D0E00107291 /* BannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6CF1A7D1D0E00107291 /* BannerTableViewCell.m */; };
+		B60DD6D71A7D1D0E00107291 /* AddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D11A7D1D0E00107291 /* AddressTableViewCell.m */; };
+		B60DD6D81A7D1D0E00107291 /* DistanceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D31A7D1D0E00107291 /* DistanceTableViewCell.m */; };
+		B60DD6D91A7D1D0E00107291 /* RoomsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D51A7D1D0E00107291 /* RoomsTableViewCell.m */; };
 		B60DD6DF1A7D1D3A00107291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6DC1A7D1D3A00107291 /* ViewController.m */; };
 		B60DD6E01A7D1D3A00107291 /* STARoomDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6DE1A7D1D3A00107291 /* STARoomDetailsViewController.m */; };
 		B60DD6E31A7D1D8200107291 /* STAHotelDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6E21A7D1D8200107291 /* STAHotelDetailsViewController.m */; };
@@ -84,14 +84,14 @@
 		53A376221A7CD9BA0043B85F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		53A376241A7CD9BA0043B85F /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		53A376251A7CD9BA0043B85F /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
-		B60DD6CE1A7D1D0E00107291 /* STABannerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STABannerTableViewCell.h; sourceTree = "<group>"; };
-		B60DD6CF1A7D1D0E00107291 /* STABannerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STABannerTableViewCell.m; sourceTree = "<group>"; };
-		B60DD6D01A7D1D0E00107291 /* STAAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAAddressTableViewCell.h; sourceTree = "<group>"; };
-		B60DD6D11A7D1D0E00107291 /* STAAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAAddressTableViewCell.m; sourceTree = "<group>"; };
-		B60DD6D21A7D1D0E00107291 /* STADistanceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STADistanceTableViewCell.h; sourceTree = "<group>"; };
-		B60DD6D31A7D1D0E00107291 /* STADistanceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STADistanceTableViewCell.m; sourceTree = "<group>"; };
-		B60DD6D41A7D1D0E00107291 /* STARoomsDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STARoomsDetailsTableViewCell.h; sourceTree = "<group>"; };
-		B60DD6D51A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STARoomsDetailsTableViewCell.m; sourceTree = "<group>"; };
+		B60DD6CE1A7D1D0E00107291 /* BannerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerTableViewCell.h; sourceTree = "<group>"; };
+		B60DD6CF1A7D1D0E00107291 /* BannerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerTableViewCell.m; sourceTree = "<group>"; };
+		B60DD6D01A7D1D0E00107291 /* AddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewCell.h; sourceTree = "<group>"; };
+		B60DD6D11A7D1D0E00107291 /* AddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewCell.m; sourceTree = "<group>"; };
+		B60DD6D21A7D1D0E00107291 /* DistanceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceTableViewCell.h; sourceTree = "<group>"; };
+		B60DD6D31A7D1D0E00107291 /* DistanceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceTableViewCell.m; sourceTree = "<group>"; };
+		B60DD6D41A7D1D0E00107291 /* RoomsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomsTableViewCell.h; sourceTree = "<group>"; };
+		B60DD6D51A7D1D0E00107291 /* RoomsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomsTableViewCell.m; sourceTree = "<group>"; };
 		B60DD6DB1A7D1D3A00107291 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B60DD6DC1A7D1D3A00107291 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B60DD6DD1A7D1D3A00107291 /* STARoomDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STARoomDetailsViewController.h; sourceTree = "<group>"; };
@@ -249,10 +249,17 @@
 				53A376071A7CD73F0043B85F /* STAHomeViewController.m */,
 				B60DD6DB1A7D1D3A00107291 /* ViewController.h */,
 				B60DD6DC1A7D1D3A00107291 /* ViewController.m */,
+<<<<<<< HEAD
+				B60DD6E11A7D1D8200107291 /* HotelDetailsViewController.h */,
+				B60DD6E21A7D1D8200107291 /* HotelDetailsViewController.m */,
+				B60DD6DD1A7D1D3A00107291 /* RoomDetailsViewController.h */,
+				B60DD6DE1A7D1D3A00107291 /* RoomDetailsViewController.m */,
+=======
 				B60DD6DD1A7D1D3A00107291 /* STARoomDetailsViewController.h */,
 				B60DD6DE1A7D1D3A00107291 /* STARoomDetailsViewController.m */,
 				B60DD6E11A7D1D8200107291 /* STAHotelDetailsViewController.h */,
 				B60DD6E21A7D1D8200107291 /* STAHotelDetailsViewController.m */,
+>>>>>>> b9cf49ae2d8e305f9300b15d34e240048b452370
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -316,14 +323,14 @@
 		B60DD6DA1A7D1D1500107291 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				B60DD6CE1A7D1D0E00107291 /* STABannerTableViewCell.h */,
-				B60DD6CF1A7D1D0E00107291 /* STABannerTableViewCell.m */,
-				B60DD6D01A7D1D0E00107291 /* STAAddressTableViewCell.h */,
-				B60DD6D11A7D1D0E00107291 /* STAAddressTableViewCell.m */,
-				B60DD6D21A7D1D0E00107291 /* STADistanceTableViewCell.h */,
-				B60DD6D31A7D1D0E00107291 /* STADistanceTableViewCell.m */,
-				B60DD6D41A7D1D0E00107291 /* STARoomsDetailsTableViewCell.h */,
-				B60DD6D51A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m */,
+				B60DD6CE1A7D1D0E00107291 /* BannerTableViewCell.h */,
+				B60DD6CF1A7D1D0E00107291 /* BannerTableViewCell.m */,
+				B60DD6D01A7D1D0E00107291 /* AddressTableViewCell.h */,
+				B60DD6D11A7D1D0E00107291 /* AddressTableViewCell.m */,
+				B60DD6D21A7D1D0E00107291 /* DistanceTableViewCell.h */,
+				B60DD6D31A7D1D0E00107291 /* DistanceTableViewCell.m */,
+				B60DD6D41A7D1D0E00107291 /* RoomsTableViewCell.h */,
+				B60DD6D51A7D1D0E00107291 /* RoomsTableViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -437,16 +444,16 @@
 			files = (
 				B60DD6E31A7D1D8200107291 /* STAHotelDetailsViewController.m in Sources */,
 				53A3761F1A7CD8E40043B85F /* UIView+Subviews.m in Sources */,
-				B60DD6D81A7D1D0E00107291 /* STADistanceTableViewCell.m in Sources */,
+				B60DD6D81A7D1D0E00107291 /* DistanceTableViewCell.m in Sources */,
 				53A375C51A7CD61A0043B85F /* SHPBaseViewController.m in Sources */,
 				53A375BD1A7CD4020043B85F /* AppDelegate.m in Sources */,
 				53A376081A7CD73F0043B85F /* STAHomeViewController.m in Sources */,
-				B60DD6D61A7D1D0E00107291 /* STABannerTableViewCell.m in Sources */,
+				B60DD6D61A7D1D0E00107291 /* BannerTableViewCell.m in Sources */,
 				53A376181A7CD8E40043B85F /* DLStarView.m in Sources */,
-				B60DD6D71A7D1D0E00107291 /* STAAddressTableViewCell.m in Sources */,
+				B60DD6D71A7D1D0E00107291 /* AddressTableViewCell.m in Sources */,
 				53A375931A7CD1DE0043B85F /* main.m in Sources */,
 				53A376171A7CD8E40043B85F /* DLStarRatingControl.m in Sources */,
-				B60DD6D91A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m in Sources */,
+				B60DD6D91A7D1D0E00107291 /* RoomsTableViewCell.m in Sources */,
 				B60DD6E01A7D1D3A00107291 /* STARoomDetailsViewController.m in Sources */,
 				53A376261A7CD9BA0043B85F /* MBProgressHUD.m in Sources */,
 				B60DD6DF1A7D1D3A00107291 /* ViewController.m in Sources */,

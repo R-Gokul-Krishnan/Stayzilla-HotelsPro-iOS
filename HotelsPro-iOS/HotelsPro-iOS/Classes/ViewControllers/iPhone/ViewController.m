@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 
-#import "BannerTableViewCell.h"
-#import "AddressTableViewCell.h"
-#import "DistanceTableViewCell.h"
-#import "RoomsTableViewCell.h"
+#import "STABannerTableViewCell.h"
+#import "STAAddressTableViewCell.h"
+#import "STADistanceTableViewCell.h"
+#import "STARoomsDetailsTableViewCell.h"
 
 @interface ViewController ()
 
@@ -41,13 +41,13 @@
             
         case 0:
         {
-            BannerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BannerTableViewCellIdentifier"];
+            STABannerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BannerTableViewCellIdentifier"];
             
             // cell setGalleryImages:<#(NSArray *)#> withHotelName:<#(NSString *)#> andHotelCity:<#(NSString *)#> andHotelRating:<#(NSString *)#>
             
             if (cell == nil) {
                 
-                cell = (BannerTableViewCell *) [[BannerTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"BannerTableViewCellIdentifier"];
+                cell = (STABannerTableViewCell *) [[STABannerTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"BannerTableViewCellIdentifier"];
                 
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
@@ -59,13 +59,13 @@
             
         case 1:
         {
-            AddressTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddressTableViewCellIdentifier"];
+            STAAddressTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddressTableViewCellIdentifier"];
             
             // [cell setAddressValue:<#(NSString *)#>]
             
             if (cell == nil) {
                 
-                cell = (AddressTableViewCell *)[[AddressTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"AddressTableViewCellIdentifier"];
+                cell = (STAAddressTableViewCell *)[[STAAddressTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"AddressTableViewCellIdentifier"];
                 
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
@@ -77,13 +77,13 @@
             
         case 2:
         {
-            DistanceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DistanceTableViewCellIdentifier"];
+            STADistanceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DistanceTableViewCellIdentifier"];
             
             // [cell setAirPortText:<#(NSString *)#> andRailwayText:<#(NSString *)#> andBusStandText:<#(NSString *)#>]
             
             if (cell == nil) {
                 
-                cell = (DistanceTableViewCell *) [[DistanceTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"DistanceTableViewCellIdentifier"];
+                cell = (STADistanceTableViewCell *) [[STADistanceTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"DistanceTableViewCellIdentifier"];
                 
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
@@ -95,13 +95,13 @@
             
         case 3:
         {
-            RoomsTableViewCell *cell = (RoomsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"RoomsTableViewCellIdentifier"];
+            STARoomsDetailsTableViewCell *cell = (STARoomsDetailsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"RoomsTableViewCellIdentifier"];
             
             // [cell createNumberOfRooms:<#(int)#> fromData:<#(NSArray *)#>]
             
             if (cell == nil) {
                 
-                cell = [[RoomsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"RoomsTableViewCellIdentifier"];
+                cell = [[STARoomsDetailsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"RoomsTableViewCellIdentifier"];
                 
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 

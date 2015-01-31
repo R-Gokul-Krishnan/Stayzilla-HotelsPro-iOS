@@ -7,20 +7,47 @@
 //
 
 #import "STARoomDetailsViewController.h"
+#import "STARoomsDetailsTableViewCell.h"
 
-@interface STARoomDetailsViewController ()
+@interface STARoomDetailsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
 
 @implementation STARoomDetailsViewController
 
+#pragma mark - ViewLifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+#pragma mark - UITableView DataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    return [[self roomDetailsArray] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    STARoomsDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roomCellID"];
+    [cell setRoomDetails:self.roomDetailsArray[indexPath.row]];
+    
+    return cell;
+}
+
+#pragma mark UITableView Delegates
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+#pragma mark - Dealloc
+
+- (void)dealloc {
+    
+    [self setRoomDetailsArray:nil];
 }
 
 

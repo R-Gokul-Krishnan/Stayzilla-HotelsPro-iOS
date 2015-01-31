@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import "AddressTableViewCell.h"
+#import "STAAddressTableViewCell.h"
 
-@interface AddressTableViewCell ()
+@interface STAAddressTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *addressTitleLabel;
 
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation AddressTableViewCell
+@implementation STAAddressTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import "DistanceTableViewCell.h"
+#import "STADistanceTableViewCell.h"
 
-@interface DistanceTableViewCell ()
+@interface STADistanceTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *distanceTitleLabel;
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation DistanceTableViewCell
+@implementation STADistanceTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

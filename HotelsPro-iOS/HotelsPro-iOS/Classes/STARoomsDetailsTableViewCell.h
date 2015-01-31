@@ -7,9 +7,10 @@
 //
 
 @import UIKit;
+#import <STAServices/STARoom.h>
 
-@interface RoomsTableViewCell : UITableViewCell
+@interface STARoomsDetailsTableViewCell : UITableViewCell
 
-- (void)createNumberOfRooms:(int)numberOfRooms fromData:(NSArray *)roomsData;
+- (void)setRoomDetails:(STARoom *)roomDetails;
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import "BannerTableViewCell.h"
+#import "STABannerTableViewCell.h"
 
-@interface BannerTableViewCell ()
+@interface STABannerTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *ImageContainerScrollView;
 @property (weak, nonatomic) IBOutlet UIView *imageContainerView;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation BannerTableViewCell
+@implementation STABannerTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

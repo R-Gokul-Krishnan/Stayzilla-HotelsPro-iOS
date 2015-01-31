@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-@interface BannerTableViewCell : UITableViewCell
+@interface STABannerTableViewCell : UITableViewCell
 
 - (void)setGalleryImages:(NSArray *)galleryImagesArray withHotelName:(NSString *)hotelName andHotelCity:(NSString *)hotelCity andHotelRating:(NSString *)hotelRating andHotelPrice:(NSString *)hotelPrice;
 

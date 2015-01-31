@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-@interface DistanceTableViewCell : UITableViewCell
+@interface STADistanceTableViewCell : UITableViewCell
 
 - (void)setAirPortText:(NSString *)airportText andRailwayText:(NSString *)railwayText andBusStandText:(NSString *)busStandText;
 

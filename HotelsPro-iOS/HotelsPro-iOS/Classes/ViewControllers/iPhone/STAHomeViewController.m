@@ -8,8 +8,10 @@
 
 #import "STAHomeViewController.h"
 #import "STAHotelDetailsViewController.h"
+#import "STARoomDetailsViewController.h"
 #import <STAServices/STAServiceLibrary.h>
 #import <STAServices/STAHotelDetails.h>
+#import <STAServices/STAHotel.h>
 
 @interface STAHomeViewController ()<UITextFieldDelegate, STAServiceLibraryDelegate>
 
@@ -57,6 +59,10 @@
 - (void)didReceiveResponse:(STAObject *)response
 {
     [self dismissActivityIndicator];
+    
+    STARoomDetailsViewController *roomDetailsVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
+    [roomDetailsVC setRoomDetailsArray:[(STAHotel *)[(STAHotelDetails *)response hotels][0] rooms]];
+    [[self navigationController] pushViewController:roomDetailsVC animated:YES];
 }
 
 - (void)didReceiveError:(STAObject *)errorresponse
