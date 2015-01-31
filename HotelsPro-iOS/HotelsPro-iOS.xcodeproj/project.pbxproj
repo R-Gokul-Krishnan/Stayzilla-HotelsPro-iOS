@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A6C95861A7DA03700C29A56 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6C95851A7DA03700C29A56 /* CoreLocation.framework */; };
 		5357161D1A7D73F900FF2151 /* STAServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5357161B1A7D73F900FF2151 /* STAServices.framework */; };
 		5357161E1A7D73F900FF2151 /* STAUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5357161C1A7D73F900FF2151 /* STAUtil.framework */; };
 		535716201A7D74D800FF2151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5357161F1A7D74D800FF2151 /* SystemConfiguration.framework */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A6C95841A7DA02900C29A56 /* STAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAConstants.h; sourceTree = "<group>"; };
+		4A6C95851A7DA03700C29A56 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5357161B1A7D73F900FF2151 /* STAServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STAServices.framework; sourceTree = "<group>"; };
 		5357161C1A7D73F900FF2151 /* STAUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STAUtil.framework; sourceTree = "<group>"; };
 		5357161F1A7D74D800FF2151 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -105,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A6C95861A7DA03700C29A56 /* CoreLocation.framework in Frameworks */,
 				535716201A7D74D800FF2151 /* SystemConfiguration.framework in Frameworks */,
 				5357161D1A7D73F900FF2151 /* STAServices.framework in Frameworks */,
 				5357161E1A7D73F900FF2151 /* STAUtil.framework in Frameworks */,
@@ -134,6 +138,7 @@
 		53A375841A7CD1DE0043B85F = {
 			isa = PBXGroup;
 			children = (
+				4A6C95851A7DA03700C29A56 /* CoreLocation.framework */,
 				53A3758F1A7CD1DE0043B85F /* HotelsPro-iOS */,
 				53A375A91A7CD1DF0043B85F /* HotelsPro-iOSTests */,
 				53A3758E1A7CD1DE0043B85F /* Products */,
@@ -191,6 +196,7 @@
 		53A375B61A7CD4010043B85F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A6C95841A7DA02900C29A56 /* STAConstants.h */,
 				B60DD6DA1A7D1D1500107291 /* Cells */,
 				53A375B71A7CD4020043B85F /* ApplicationHandlers */,
 				53A375BA1A7CD4020043B85F /* ViewControllers */,
