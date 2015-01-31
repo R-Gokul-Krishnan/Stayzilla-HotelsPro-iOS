@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface RoomsTableViewCell : UITableViewCell
 

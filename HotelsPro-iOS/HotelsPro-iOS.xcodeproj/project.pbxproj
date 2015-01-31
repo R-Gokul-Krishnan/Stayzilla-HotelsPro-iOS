@@ -249,10 +249,10 @@
 				53A376071A7CD73F0043B85F /* SHPHomeViewController.m */,
 				B60DD6DB1A7D1D3A00107291 /* ViewController.h */,
 				B60DD6DC1A7D1D3A00107291 /* ViewController.m */,
-				B60DD6DD1A7D1D3A00107291 /* RoomDetailsViewController.h */,
-				B60DD6DE1A7D1D3A00107291 /* RoomDetailsViewController.m */,
 				B60DD6E11A7D1D8200107291 /* HotelDetailsViewController.h */,
 				B60DD6E21A7D1D8200107291 /* HotelDetailsViewController.m */,
+				B60DD6DD1A7D1D3A00107291 /* RoomDetailsViewController.h */,
+				B60DD6DE1A7D1D3A00107291 /* RoomDetailsViewController.m */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -576,6 +576,7 @@
 					"$(PROJECT_DIR)/HotelsPro-iOS/Frameworks",
 				);
 				INFOPLIST_FILE = "HotelsPro-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -591,6 +592,7 @@
 					"$(PROJECT_DIR)/HotelsPro-iOS/Frameworks",
 				);
 				INFOPLIST_FILE = "HotelsPro-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s";
