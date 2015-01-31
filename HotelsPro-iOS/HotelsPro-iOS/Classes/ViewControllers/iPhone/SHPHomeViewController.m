@@ -8,32 +8,58 @@
 
 #import "SHPHomeViewController.h"
 #import "HotelDetailsViewController.h"
+#import <STAServices/STAServiceLibrary.h>
+#import <STAServices/STAHotelDetails.h>
 
-@interface SHPHomeViewController ()
+@interface SHPHomeViewController ()<UITextFieldDelegate, STAServiceLibraryDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
+@property (weak, nonatomic) IBOutlet UITextField *checkinTextField;
+@property (weak, nonatomic) IBOutlet UITextField *checkOutTextField;
+@property (weak, nonatomic) IBOutlet UITextField *latitudeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *longitude;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+
+
+- (IBAction)searchButtonAction:(id)sender;
 
 @end
 
 @implementation SHPHomeViewController
 
+#pragma mark - ViewLifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     HotelDetailsViewController *hotelDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HotelDetailsViewController"];
-     [[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
+     //[[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+#pragma mark - IBAction Methods
+
+- (IBAction)searchButtonAction:(id)sender {
+    
+    STAHotelDetails *hotelDetails = [[STAHotelDetails alloc] init];
+    [hotelDetails setLocation:@"Ooty"];
+    [hotelDetails setCheckIn:@"06/02/2015"];
+    [hotelDetails setCheckOut:@"09/02/2015"];
+    [hotelDetails setPropertyType:@"Hotels"];
+    STAServiceLibrary* nmService = [[STAServiceLibrary alloc] init];
+    
+    [nmService getHotelDetails:hotelDetails delegate:self];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - STAServiceLibraryDelegates
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)didReceiveResponse:(STAObject *)response
+{
+    
 }
-*/
+
+- (void)didReceiveError:(STAObject *)errorresponse
+{
+    
+}
 
 @end

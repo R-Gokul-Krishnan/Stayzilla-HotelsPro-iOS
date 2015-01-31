@@ -37,6 +37,8 @@
 		532DB91D1A7D1FF2003E6EEF /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB90B1A7D1FF2003E6EEF /* UIRefreshControl+AFNetworking.m */; };
 		532DB91E1A7D1FF2003E6EEF /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB90D1A7D1FF2003E6EEF /* UIWebView+AFNetworking.m */; };
 		532DB9251A7D2154003E6EEF /* SHPServiceLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB9241A7D2154003E6EEF /* SHPServiceLibrary.m */; };
+		53956CDF1A7D6A3A00B6B389 /* STAServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53956CDD1A7D6A3A00B6B389 /* STAServices.framework */; };
+		53956CE01A7D6A3B00B6B389 /* STAUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53956CDE1A7D6A3A00B6B389 /* STAUtil.framework */; };
 		53A375931A7CD1DE0043B85F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A375921A7CD1DE0043B85F /* main.m */; };
 		53A3759C1A7CD1DE0043B85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A3759A1A7CD1DE0043B85F /* Main.storyboard */; };
 		53A3759E1A7CD1DE0043B85F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A3759D1A7CD1DE0043B85F /* Images.xcassets */; };
@@ -140,6 +142,8 @@
 		532DB90D1A7D1FF2003E6EEF /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		532DB9231A7D2154003E6EEF /* SHPServiceLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPServiceLibrary.h; sourceTree = "<group>"; };
 		532DB9241A7D2154003E6EEF /* SHPServiceLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPServiceLibrary.m; sourceTree = "<group>"; };
+		53956CDD1A7D6A3A00B6B389 /* STAServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STAServices.framework; sourceTree = "<group>"; };
+		53956CDE1A7D6A3A00B6B389 /* STAUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STAUtil.framework; sourceTree = "<group>"; };
 		53A3758D1A7CD1DE0043B85F /* HotelsPro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HotelsPro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A375911A7CD1DE0043B85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A375921A7CD1DE0043B85F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53956CDF1A7D6A3A00B6B389 /* STAServices.framework in Frameworks */,
+				53956CE01A7D6A3B00B6B389 /* STAUtil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +320,15 @@
 			path = SHPServiceLibrary;
 			sourceTree = "<group>";
 		};
+		53956CDC1A7D6A3A00B6B389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53956CDD1A7D6A3A00B6B389 /* STAServices.framework */,
+				53956CDE1A7D6A3A00B6B389 /* STAUtil.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		53A375841A7CD1DE0043B85F = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +350,7 @@
 		53A3758F1A7CD1DE0043B85F /* HotelsPro-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				53956CDC1A7D6A3A00B6B389 /* Frameworks */,
 				53A375C61A7CD6F40043B85F /* Librarys */,
 				53A375C01A7CD42D0043B85F /* Resources */,
 				53A375BF1A7CD4150043B85F /* UI */,
@@ -785,6 +801,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotelsPro-iOS/Frameworks",
+				);
 				INFOPLIST_FILE = "HotelsPro-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -795,6 +815,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotelsPro-iOS/Frameworks",
+				);
 				INFOPLIST_FILE = "HotelsPro-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
