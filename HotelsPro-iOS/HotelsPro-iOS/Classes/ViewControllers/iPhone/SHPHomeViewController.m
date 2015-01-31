@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     HotelDetailsViewController *hotelDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HotelDetailsViewController"];
-    // [[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
+     [[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
