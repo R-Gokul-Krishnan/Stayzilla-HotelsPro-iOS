@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Paul Kalapati. All rights reserved.
 //
 
-#import "RoomDetailsViewController.h"
+#import "STARoomDetailsViewController.h"
 
-@interface RoomDetailsViewController ()
+@interface STARoomDetailsViewController ()
 
 @end
 
-@implementation RoomDetailsViewController
+@implementation STARoomDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

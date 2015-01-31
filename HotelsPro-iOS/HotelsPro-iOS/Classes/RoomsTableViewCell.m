@@ -7,7 +7,7 @@
 //
 
 #import "RoomsTableViewCell.h"
-#import "RoomDetailsViewController.h"
+#import "STARoomDetailsViewController.h"
 
 @interface RoomsTableViewCell ()
 
@@ -49,7 +49,7 @@
 {
     for (int i = 0; i < numberOfRooms; i++) {
         
-        RoomDetailsViewController *roomDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
+        STARoomDetailsViewController *roomDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
         
         // roomsDataObjectAtIndex:i
         

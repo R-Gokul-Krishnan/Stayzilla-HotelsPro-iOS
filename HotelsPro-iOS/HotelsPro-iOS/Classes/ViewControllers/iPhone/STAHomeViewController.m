@@ -6,12 +6,12 @@
 //
 //
 
-#import "SHPHomeViewController.h"
-#import "HotelDetailsViewController.h"
+#import "STAHomeViewController.h"
+#import "STAHotelDetailsViewController.h"
 #import <STAServices/STAServiceLibrary.h>
 #import <STAServices/STAHotelDetails.h>
 
-@interface SHPHomeViewController ()<UITextFieldDelegate, STAServiceLibraryDelegate>
+@interface STAHomeViewController ()<UITextFieldDelegate, STAServiceLibraryDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *locationTextField;
 @property (weak, nonatomic) IBOutlet UITextField *checkinTextField;
@@ -25,14 +25,14 @@
 
 @end
 
-@implementation SHPHomeViewController
+@implementation STAHomeViewController
 
 #pragma mark - ViewLifeCycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    HotelDetailsViewController *hotelDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HotelDetailsViewController"];
+    STAHotelDetailsViewController *hotelDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HotelDetailsViewController"];
      //[[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
 }
 
