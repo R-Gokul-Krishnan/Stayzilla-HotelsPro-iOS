@@ -7,6 +7,7 @@
 //
 
 #import "SHPHomeViewController.h"
+#import "HotelDetailsViewController.h"
 
 @interface SHPHomeViewController ()
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    HotelDetailsViewController *hotelDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HotelDetailsViewController"];
+    // [[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
