@@ -40,6 +40,8 @@
 
 - (IBAction)searchButtonAction:(id)sender {
     
+    [self showActivityIndicator];
+    
     STAHotelDetails *hotelDetails = [[STAHotelDetails alloc] init];
     [hotelDetails setLocation:@"Ooty"];
     [hotelDetails setCheckIn:@"06/02/2015"];
@@ -54,11 +56,18 @@
 
 - (void)didReceiveResponse:(STAObject *)response
 {
-    
+    [self dismissActivityIndicator];
 }
 
 - (void)didReceiveError:(STAObject *)errorresponse
 {
+    [self dismissActivityIndicator];
+    UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Sorry!"
+                                                             message:errorresponse.description
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+    [errorAlertView show];
     
 }
 
