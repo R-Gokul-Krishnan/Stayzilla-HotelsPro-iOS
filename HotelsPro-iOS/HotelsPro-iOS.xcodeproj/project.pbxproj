@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532DB8DB1A7D0406003E6EEF /* SHPAmenities.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8C31A7D0406003E6EEF /* SHPAmenities.m */; };
+		532DB8DC1A7D0406003E6EEF /* SHPCheckInTimings.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8C51A7D0406003E6EEF /* SHPCheckInTimings.m */; };
+		532DB8DD1A7D0406003E6EEF /* SHPCheckOutTimings.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8C71A7D0406003E6EEF /* SHPCheckOutTimings.m */; };
+		532DB8DE1A7D0406003E6EEF /* SHPContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8C91A7D0406003E6EEF /* SHPContext.m */; };
+		532DB8DF1A7D0406003E6EEF /* SHPDistanceFrom.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8CB1A7D0406003E6EEF /* SHPDistanceFrom.m */; };
+		532DB8E01A7D0406003E6EEF /* SHPGeoCoordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8CD1A7D0406003E6EEF /* SHPGeoCoordinates.m */; };
+		532DB8E11A7D0406003E6EEF /* SHPHotelListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8CF1A7D0406003E6EEF /* SHPHotelListingModel.m */; };
+		532DB8E21A7D0406003E6EEF /* SHPHotelLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8D11A7D0406003E6EEF /* SHPHotelLists.m */; };
+		532DB8E31A7D0406003E6EEF /* SHPHotels.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8D31A7D0406003E6EEF /* SHPHotels.m */; };
+		532DB8E41A7D0406003E6EEF /* SHPExtraInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8D61A7D0406003E6EEF /* SHPExtraInfo.m */; };
+		532DB8E51A7D0406003E6EEF /* SHPMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8D81A7D0406003E6EEF /* SHPMetadata.m */; };
+		532DB8E61A7D0406003E6EEF /* SHPRooms.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DB8DA1A7D0406003E6EEF /* SHPRooms.m */; };
 		53A375931A7CD1DE0043B85F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A375921A7CD1DE0043B85F /* main.m */; };
 		53A3759C1A7CD1DE0043B85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A3759A1A7CD1DE0043B85F /* Main.storyboard */; };
 		53A3759E1A7CD1DE0043B85F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A3759D1A7CD1DE0043B85F /* Images.xcassets */; };
@@ -40,6 +52,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		532DB8C21A7D0406003E6EEF /* SHPAmenities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPAmenities.h; sourceTree = "<group>"; };
+		532DB8C31A7D0406003E6EEF /* SHPAmenities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPAmenities.m; sourceTree = "<group>"; };
+		532DB8C41A7D0406003E6EEF /* SHPCheckInTimings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPCheckInTimings.h; sourceTree = "<group>"; };
+		532DB8C51A7D0406003E6EEF /* SHPCheckInTimings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPCheckInTimings.m; sourceTree = "<group>"; };
+		532DB8C61A7D0406003E6EEF /* SHPCheckOutTimings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPCheckOutTimings.h; sourceTree = "<group>"; };
+		532DB8C71A7D0406003E6EEF /* SHPCheckOutTimings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPCheckOutTimings.m; sourceTree = "<group>"; };
+		532DB8C81A7D0406003E6EEF /* SHPContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPContext.h; sourceTree = "<group>"; };
+		532DB8C91A7D0406003E6EEF /* SHPContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPContext.m; sourceTree = "<group>"; };
+		532DB8CA1A7D0406003E6EEF /* SHPDistanceFrom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPDistanceFrom.h; sourceTree = "<group>"; };
+		532DB8CB1A7D0406003E6EEF /* SHPDistanceFrom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPDistanceFrom.m; sourceTree = "<group>"; };
+		532DB8CC1A7D0406003E6EEF /* SHPGeoCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGeoCoordinates.h; sourceTree = "<group>"; };
+		532DB8CD1A7D0406003E6EEF /* SHPGeoCoordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPGeoCoordinates.m; sourceTree = "<group>"; };
+		532DB8CE1A7D0406003E6EEF /* SHPHotelListingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPHotelListingModel.h; sourceTree = "<group>"; };
+		532DB8CF1A7D0406003E6EEF /* SHPHotelListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPHotelListingModel.m; sourceTree = "<group>"; };
+		532DB8D01A7D0406003E6EEF /* SHPHotelLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPHotelLists.h; sourceTree = "<group>"; };
+		532DB8D11A7D0406003E6EEF /* SHPHotelLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPHotelLists.m; sourceTree = "<group>"; };
+		532DB8D21A7D0406003E6EEF /* SHPHotels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPHotels.h; sourceTree = "<group>"; };
+		532DB8D31A7D0406003E6EEF /* SHPHotels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPHotels.m; sourceTree = "<group>"; };
+		532DB8D41A7D0406003E6EEF /* SHPHotelsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPHotelsModel.h; sourceTree = "<group>"; };
+		532DB8D51A7D0406003E6EEF /* SHPExtraInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPExtraInfo.h; sourceTree = "<group>"; };
+		532DB8D61A7D0406003E6EEF /* SHPExtraInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPExtraInfo.m; sourceTree = "<group>"; };
+		532DB8D71A7D0406003E6EEF /* SHPMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPMetadata.h; sourceTree = "<group>"; };
+		532DB8D81A7D0406003E6EEF /* SHPMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPMetadata.m; sourceTree = "<group>"; };
+		532DB8D91A7D0406003E6EEF /* SHPRooms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPRooms.h; sourceTree = "<group>"; };
+		532DB8DA1A7D0406003E6EEF /* SHPRooms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPRooms.m; sourceTree = "<group>"; };
 		53A3758D1A7CD1DE0043B85F /* HotelsPro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HotelsPro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A375911A7CD1DE0043B85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A375921A7CD1DE0043B85F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +128,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532DB8C01A7D0406003E6EEF /* ServiceModels */ = {
+			isa = PBXGroup;
+			children = (
+				532DB8C11A7D0406003E6EEF /* SHPHotelDataModels */,
+			);
+			path = ServiceModels;
+			sourceTree = "<group>";
+		};
+		532DB8C11A7D0406003E6EEF /* SHPHotelDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				532DB8C21A7D0406003E6EEF /* SHPAmenities.h */,
+				532DB8C31A7D0406003E6EEF /* SHPAmenities.m */,
+				532DB8C41A7D0406003E6EEF /* SHPCheckInTimings.h */,
+				532DB8C51A7D0406003E6EEF /* SHPCheckInTimings.m */,
+				532DB8C61A7D0406003E6EEF /* SHPCheckOutTimings.h */,
+				532DB8C71A7D0406003E6EEF /* SHPCheckOutTimings.m */,
+				532DB8C81A7D0406003E6EEF /* SHPContext.h */,
+				532DB8C91A7D0406003E6EEF /* SHPContext.m */,
+				532DB8CA1A7D0406003E6EEF /* SHPDistanceFrom.h */,
+				532DB8CB1A7D0406003E6EEF /* SHPDistanceFrom.m */,
+				532DB8CC1A7D0406003E6EEF /* SHPGeoCoordinates.h */,
+				532DB8CD1A7D0406003E6EEF /* SHPGeoCoordinates.m */,
+				532DB8CE1A7D0406003E6EEF /* SHPHotelListingModel.h */,
+				532DB8CF1A7D0406003E6EEF /* SHPHotelListingModel.m */,
+				532DB8D01A7D0406003E6EEF /* SHPHotelLists.h */,
+				532DB8D11A7D0406003E6EEF /* SHPHotelLists.m */,
+				532DB8D21A7D0406003E6EEF /* SHPHotels.h */,
+				532DB8D31A7D0406003E6EEF /* SHPHotels.m */,
+				532DB8D41A7D0406003E6EEF /* SHPHotelsModel.h */,
+				532DB8D51A7D0406003E6EEF /* SHPExtraInfo.h */,
+				532DB8D61A7D0406003E6EEF /* SHPExtraInfo.m */,
+				532DB8D71A7D0406003E6EEF /* SHPMetadata.h */,
+				532DB8D81A7D0406003E6EEF /* SHPMetadata.m */,
+				532DB8D91A7D0406003E6EEF /* SHPRooms.h */,
+				532DB8DA1A7D0406003E6EEF /* SHPRooms.m */,
+			);
+			path = SHPHotelDataModels;
+			sourceTree = "<group>";
+		};
 		53A375841A7CD1DE0043B85F = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +227,7 @@
 		53A375B61A7CD4010043B85F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				532DB8C01A7D0406003E6EEF /* ServiceModels */,
 				53A375B71A7CD4020043B85F /* ApplicationHandlers */,
 				53A375BA1A7CD4020043B85F /* ViewControllers */,
 			);
@@ -372,14 +450,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532DB8E21A7D0406003E6EEF /* SHPHotelLists.m in Sources */,
+				532DB8DF1A7D0406003E6EEF /* SHPDistanceFrom.m in Sources */,
 				53A3761F1A7CD8E40043B85F /* UIView+Subviews.m in Sources */,
+				532DB8DB1A7D0406003E6EEF /* SHPAmenities.m in Sources */,
+				532DB8E61A7D0406003E6EEF /* SHPRooms.m in Sources */,
 				53A375C51A7CD61A0043B85F /* SHPBaseViewController.m in Sources */,
+				532DB8DE1A7D0406003E6EEF /* SHPContext.m in Sources */,
+				532DB8E01A7D0406003E6EEF /* SHPGeoCoordinates.m in Sources */,
+				532DB8E11A7D0406003E6EEF /* SHPHotelListingModel.m in Sources */,
+				532DB8DD1A7D0406003E6EEF /* SHPCheckOutTimings.m in Sources */,
 				53A375BD1A7CD4020043B85F /* AppDelegate.m in Sources */,
 				53A376081A7CD73F0043B85F /* SHPHomeViewController.m in Sources */,
 				53A376181A7CD8E40043B85F /* DLStarView.m in Sources */,
 				53A375931A7CD1DE0043B85F /* main.m in Sources */,
 				53A376171A7CD8E40043B85F /* DLStarRatingControl.m in Sources */,
+				532DB8E31A7D0406003E6EEF /* SHPHotels.m in Sources */,
+				532DB8E51A7D0406003E6EEF /* SHPMetadata.m in Sources */,
+				532DB8E41A7D0406003E6EEF /* SHPExtraInfo.m in Sources */,
 				53A376261A7CD9BA0043B85F /* MBProgressHUD.m in Sources */,
+				532DB8DC1A7D0406003E6EEF /* SHPCheckInTimings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +660,7 @@
 				53A375B21A7CD1DF0043B85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53A375B31A7CD1DF0043B85F /* Build configuration list for PBXNativeTarget "HotelsPro-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +669,7 @@
 				53A375B51A7CD1DF0043B85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
