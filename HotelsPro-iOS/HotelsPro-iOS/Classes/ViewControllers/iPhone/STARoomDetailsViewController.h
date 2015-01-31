@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface RoomDetailsViewController : UIViewController
+@interface STARoomDetailsViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *roomTypeValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *actualTarrifLabel;

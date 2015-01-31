@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HotelDetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface STAHotelDetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

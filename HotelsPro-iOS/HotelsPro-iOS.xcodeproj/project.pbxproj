@@ -17,7 +17,7 @@
 		53A375AD1A7CD1DF0043B85F /* HotelsPro_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A375AC1A7CD1DF0043B85F /* HotelsPro_iOSTests.m */; };
 		53A375BD1A7CD4020043B85F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A375B91A7CD4020043B85F /* AppDelegate.m */; };
 		53A375C51A7CD61A0043B85F /* SHPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A375C31A7CD61A0043B85F /* SHPBaseViewController.m */; };
-		53A376081A7CD73F0043B85F /* SHPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A376071A7CD73F0043B85F /* SHPHomeViewController.m */; };
+		53A376081A7CD73F0043B85F /* STAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A376071A7CD73F0043B85F /* STAHomeViewController.m */; };
 		53A376171A7CD8E40043B85F /* DLStarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A3760B1A7CD8E40043B85F /* DLStarRatingControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		53A376181A7CD8E40043B85F /* DLStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A3760D1A7CD8E40043B85F /* DLStarView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		53A376191A7CD8E40043B85F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A3760F1A7CD8E40043B85F /* star.png */; };
@@ -35,8 +35,8 @@
 		B60DD6D81A7D1D0E00107291 /* DistanceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D31A7D1D0E00107291 /* DistanceTableViewCell.m */; };
 		B60DD6D91A7D1D0E00107291 /* RoomsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D51A7D1D0E00107291 /* RoomsTableViewCell.m */; };
 		B60DD6DF1A7D1D3A00107291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6DC1A7D1D3A00107291 /* ViewController.m */; };
-		B60DD6E01A7D1D3A00107291 /* RoomDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6DE1A7D1D3A00107291 /* RoomDetailsViewController.m */; };
-		B60DD6E31A7D1D8200107291 /* HotelDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6E21A7D1D8200107291 /* HotelDetailsViewController.m */; };
+		B60DD6E01A7D1D3A00107291 /* STARoomDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6DE1A7D1D3A00107291 /* STARoomDetailsViewController.m */; };
+		B60DD6E31A7D1D8200107291 /* STAHotelDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6E21A7D1D8200107291 /* STAHotelDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,8 @@
 		53A375B91A7CD4020043B85F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53A375C21A7CD61A0043B85F /* SHPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPBaseViewController.h; sourceTree = "<group>"; };
 		53A375C31A7CD61A0043B85F /* SHPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPBaseViewController.m; sourceTree = "<group>"; };
-		53A376061A7CD73F0043B85F /* SHPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPHomeViewController.h; sourceTree = "<group>"; };
-		53A376071A7CD73F0043B85F /* SHPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPHomeViewController.m; sourceTree = "<group>"; };
+		53A376061A7CD73F0043B85F /* STAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAHomeViewController.h; sourceTree = "<group>"; };
+		53A376071A7CD73F0043B85F /* STAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAHomeViewController.m; sourceTree = "<group>"; };
 		53A3760A1A7CD8E40043B85F /* DLStarRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStarRatingControl.h; sourceTree = "<group>"; };
 		53A3760B1A7CD8E40043B85F /* DLStarRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLStarRatingControl.m; sourceTree = "<group>"; };
 		53A3760C1A7CD8E40043B85F /* DLStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStarView.h; sourceTree = "<group>"; };
@@ -94,10 +94,10 @@
 		B60DD6D51A7D1D0E00107291 /* RoomsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomsTableViewCell.m; sourceTree = "<group>"; };
 		B60DD6DB1A7D1D3A00107291 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B60DD6DC1A7D1D3A00107291 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B60DD6DD1A7D1D3A00107291 /* RoomDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDetailsViewController.h; sourceTree = "<group>"; };
-		B60DD6DE1A7D1D3A00107291 /* RoomDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomDetailsViewController.m; sourceTree = "<group>"; };
-		B60DD6E11A7D1D8200107291 /* HotelDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailsViewController.h; sourceTree = "<group>"; };
-		B60DD6E21A7D1D8200107291 /* HotelDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailsViewController.m; sourceTree = "<group>"; };
+		B60DD6DD1A7D1D3A00107291 /* STARoomDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STARoomDetailsViewController.h; sourceTree = "<group>"; };
+		B60DD6DE1A7D1D3A00107291 /* STARoomDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STARoomDetailsViewController.m; sourceTree = "<group>"; };
+		B60DD6E11A7D1D8200107291 /* STAHotelDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAHotelDetailsViewController.h; sourceTree = "<group>"; };
+		B60DD6E21A7D1D8200107291 /* STAHotelDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAHotelDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,14 +245,14 @@
 		53A375C41A7CD61A0043B85F /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				53A376061A7CD73F0043B85F /* SHPHomeViewController.h */,
-				53A376071A7CD73F0043B85F /* SHPHomeViewController.m */,
+				53A376061A7CD73F0043B85F /* STAHomeViewController.h */,
+				53A376071A7CD73F0043B85F /* STAHomeViewController.m */,
 				B60DD6DB1A7D1D3A00107291 /* ViewController.h */,
 				B60DD6DC1A7D1D3A00107291 /* ViewController.m */,
-				B60DD6E11A7D1D8200107291 /* HotelDetailsViewController.h */,
-				B60DD6E21A7D1D8200107291 /* HotelDetailsViewController.m */,
-				B60DD6DD1A7D1D3A00107291 /* RoomDetailsViewController.h */,
-				B60DD6DE1A7D1D3A00107291 /* RoomDetailsViewController.m */,
+				B60DD6DD1A7D1D3A00107291 /* STARoomDetailsViewController.h */,
+				B60DD6DE1A7D1D3A00107291 /* STARoomDetailsViewController.m */,
+				B60DD6E11A7D1D8200107291 /* STAHotelDetailsViewController.h */,
+				B60DD6E21A7D1D8200107291 /* STAHotelDetailsViewController.m */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -435,19 +435,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60DD6E31A7D1D8200107291 /* HotelDetailsViewController.m in Sources */,
+				B60DD6E31A7D1D8200107291 /* STAHotelDetailsViewController.m in Sources */,
 				53A3761F1A7CD8E40043B85F /* UIView+Subviews.m in Sources */,
 				B60DD6D81A7D1D0E00107291 /* DistanceTableViewCell.m in Sources */,
 				53A375C51A7CD61A0043B85F /* SHPBaseViewController.m in Sources */,
 				53A375BD1A7CD4020043B85F /* AppDelegate.m in Sources */,
-				53A376081A7CD73F0043B85F /* SHPHomeViewController.m in Sources */,
+				53A376081A7CD73F0043B85F /* STAHomeViewController.m in Sources */,
 				B60DD6D61A7D1D0E00107291 /* BannerTableViewCell.m in Sources */,
 				53A376181A7CD8E40043B85F /* DLStarView.m in Sources */,
 				B60DD6D71A7D1D0E00107291 /* AddressTableViewCell.m in Sources */,
 				53A375931A7CD1DE0043B85F /* main.m in Sources */,
 				53A376171A7CD8E40043B85F /* DLStarRatingControl.m in Sources */,
 				B60DD6D91A7D1D0E00107291 /* RoomsTableViewCell.m in Sources */,
-				B60DD6E01A7D1D3A00107291 /* RoomDetailsViewController.m in Sources */,
+				B60DD6E01A7D1D3A00107291 /* STARoomDetailsViewController.m in Sources */,
 				53A376261A7CD9BA0043B85F /* MBProgressHUD.m in Sources */,
 				B60DD6DF1A7D1D3A00107291 /* ViewController.m in Sources */,
 			);

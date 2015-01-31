@@ -6,17 +6,17 @@
 //
 //
 
-#import "HotelDetailsViewController.h"
+#import "STAHotelDetailsViewController.h"
 #import "BannerTableViewCell.h"
 #import "AddressTableViewCell.h"
 #import "DistanceTableViewCell.h"
 #import "RoomsTableViewCell.h"
 
-@interface HotelDetailsViewController ()
+@interface STAHotelDetailsViewController ()
 
 @end
 
-@implementation HotelDetailsViewController
+@implementation STAHotelDetailsViewController
 
 
 - (void)viewDidLoad {

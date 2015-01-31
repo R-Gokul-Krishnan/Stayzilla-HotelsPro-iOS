@@ -8,7 +8,7 @@
 
 #import "SHPBaseViewController.h"
 
-@interface SHPHomeViewController : SHPBaseViewController
+@interface STAHomeViewController : SHPBaseViewController
 
 
 
