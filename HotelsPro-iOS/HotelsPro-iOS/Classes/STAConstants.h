@@ -11,3 +11,4 @@
 #define ERROR_GLOBAL_EXCEPTION                  @"Sorry! Something went wrong. Please try again after some time."
 #define kFailedLocationServiceEnable            @"Turn ON location services to allow Hotel-Pro app to determine your location."
 
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
