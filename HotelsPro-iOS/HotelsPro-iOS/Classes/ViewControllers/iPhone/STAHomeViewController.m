@@ -64,7 +64,7 @@
         [self showAlertMessage:@"Please enter CheckOut Time" andMessage:nil andDelegate:nil];
         return;
     }
- 
+    [self showActivityIndicator];
 
     STAHotelDetails *hotelDetails = [[STAHotelDetails alloc] init];
     [hotelDetails setLocation:[[self locationTextField] text]];
@@ -88,7 +88,11 @@
 - (void)didReceiveResponse:(STAObject *)response
 {
     [self dismissActivityIndicator];
-    
+    STAHotelDetails *hotelDetails = objc_dynamic_cast(STAHotelDetails, response);
+    if (hotelDetails == nil || [[hotelDetails hotels] count] == 0) {
+        [self showAlertMessage:@"sorry! Please try someother location" andMessage:nil andDelegate:nil];
+        return;
+    }
     STARoomDetailsViewController *roomDetailsVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
     [roomDetailsVC setRoomDetailsArray:[(STAHotel *)[(STAHotelDetails *)response hotels][0] rooms]];
     [[self navigationController] pushViewController:roomDetailsVC animated:YES];
@@ -98,7 +102,7 @@
 {
     [self dismissActivityIndicator];
 
-    
+    [self showAlertMessage:errorresponse.description andMessage:nil andDelegate:nil];
 }
 
 - (IBAction)getCurrentLocation:(id)sender
