@@ -145,6 +145,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC717761A7DEB330018CAC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		53956CDC1A7D6A3A00B6B389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +223,7 @@
 		53A375B61A7CD4010043B85F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4AC717761A7DEB330018CAC5 /* View */,
 				4A6C95841A7DA02900C29A56 /* STAConstants.h */,
 				B60DD6DA1A7D1D1500107291 /* Cells */,
 				53A375B71A7CD4020043B85F /* ApplicationHandlers */,

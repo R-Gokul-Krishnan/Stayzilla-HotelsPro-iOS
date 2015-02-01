@@ -81,57 +81,7 @@
     [_topImage addSubview:perfectPixelContent];
     
     
-    // Label logo
-    UILabel *logo = [[UILabel alloc] initWithFrame:CGRectMake(15, 12, 290, 0)];
-    logo.backgroundColor = [UIColor clearColor];
-    logo.textColor = [UIColor whiteColor];
-    logo.font = [UIFont fontWithName:@"Helvetica-Bold" size:22];
-    logo.text = @"Paper";
-    [logo sizeToFit];
-    // Label Shadow
-    [logo setClipsToBounds:NO];
-    [logo.layer setShadowOffset:CGSizeMake(0, 0)];
-    [logo.layer setShadowColor:[[UIColor blackColor] CGColor]];
-    [logo.layer setShadowRadius:1.0];
-    [logo.layer setShadowOpacity:0.6];
-    [_mainView addSubview:logo];
-    
-    
-    // Label Title
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(15, logo.frame.origin.y + CGRectGetHeight(logo.frame) + 8, 290, 0)];
-    title.backgroundColor = [UIColor clearColor];
-    title.textColor = [UIColor whiteColor];
-    title.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
-    title.text = @"Heberti Almeida";
-    [title sizeToFit];
-    // Label Shadow
-    [title setClipsToBounds:NO];
-    [title.layer setShadowOffset:CGSizeMake(0, 0)];
-    [title.layer setShadowColor:[[UIColor blackColor] CGColor]];
-    [title.layer setShadowRadius:1.0];
-    [title.layer setShadowOpacity:0.6];
-    [_mainView addSubview:title];
-    
-    
-    // Label SubTitle
-    UILabel *subTitle = [[UILabel alloc] initWithFrame:CGRectMake(15, title.frame.origin.y + CGRectGetHeight(title.frame), 290, 0)];
-    subTitle.backgroundColor = [UIColor clearColor];
-    subTitle.textColor = [UIColor whiteColor];
-    subTitle.font = [UIFont fontWithName:@"Helvetica" size:13];
-    subTitle.text = @"Lorem ipsum dolor sit amet, consectetuer adipiscing elit";
-    subTitle.lineBreakMode = NSLineBreakByWordWrapping;
-    subTitle.numberOfLines = 0;
-    [subTitle sizeToFit];
-    // Label Shadow
-    [subTitle setClipsToBounds:NO];
-    [subTitle.layer setShadowOffset:CGSizeMake(0, 0)];
-    [subTitle.layer setShadowColor:[[UIColor blackColor] CGColor]];
-    [subTitle.layer setShadowRadius:1.0];
-    [subTitle.layer setShadowOpacity:0.6];
-    [_mainView addSubview:subTitle];
-    
-    
-    // First Load
+      // First Load
     [self changeSlide];
     
     // Loop gallery - fix loop: http://bynomial.com/blog/?p=67

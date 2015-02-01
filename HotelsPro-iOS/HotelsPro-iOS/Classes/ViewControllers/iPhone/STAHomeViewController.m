@@ -102,7 +102,7 @@
 //    STARoomDetailsViewController *roomDetailsVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
 //    [roomDetailsVC setRoomDetailsArray:[(STAHotel *)[(STAHotelDetails *)response hotels][0] rooms]];
     HAPaperCollectionViewController *vc = [self showHotelDetailView];
-    [vc setHomeDetails:hotelDetails];
+    [vc setHotelDetails:hotelDetails];
     [[self navigationController] pushViewController:vc animated:YES];
 }
 
