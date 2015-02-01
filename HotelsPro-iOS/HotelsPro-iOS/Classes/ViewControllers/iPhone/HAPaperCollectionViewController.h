@@ -8,7 +8,7 @@
 @import UIKit;
 
 @interface HAPaperCollectionViewController : UICollectionViewController
-@property (nonatomic, strong) STAHotelDetails         *homeDetails;;
+@property (nonatomic, strong) STAHotelDetails         *hotelDetails;;
 
 - (UICollectionViewController*)nextViewControllerAtPoint:(CGPoint)point;
 

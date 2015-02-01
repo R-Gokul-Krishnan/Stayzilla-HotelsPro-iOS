@@ -22,8 +22,12 @@
 {
     if (self = [super initWithCollectionViewLayout:layout])
     {
+  
+        
+        
         [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CELL_ID];
         [self.collectionView setBackgroundColor:[UIColor clearColor]];
+        [[self collectionView] reloadData];
     }
     return self;
 }
@@ -36,23 +40,21 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
-    cell.layer.cornerRadius = 4;
-    cell.clipsToBounds = YES;
+    UICollectionViewCell *hotelCell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
+    hotelCell.backgroundColor = [UIColor whiteColor];
+    hotelCell.layer.cornerRadius = 4;
+    hotelCell.clipsToBounds = YES;
     
-
-   UIView *vi = [[UIView alloc] init];
-    [vi setFrame:[[cell backgroundView] bounds]];
-    [vi setBackgroundColor:[UIColor redColor]];
-    [cell setBackgroundView:vi];
+    STAHotel *hotel =  objectAtIndex([[self hotelDetails] hotels], indexPath.row);
+  
+ 
     
-    return cell;
+    return hotelCell;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [[[self homeDetails] hotels] count];
+    return [[[self hotelDetails] hotels] count];
 }
 
 
