@@ -65,6 +65,9 @@
         return;
     }
     [self showActivityIndicator];
+    [[self locationTextField] setText:@"Ooty"];
+    [[self checkinTextField] setText:@"06/02/2015"];
+    [[self checkOutTextField] setText:@"09/02/2015"];
 
     STAHotelDetails *hotelDetails = [[STAHotelDetails alloc] init];
     [hotelDetails setLocation:[[self locationTextField] text]];
@@ -102,7 +105,16 @@
 {
     [self dismissActivityIndicator];
 
-    [self showAlertMessage:errorresponse.description andMessage:nil andDelegate:nil];
+    if (![STAServiceLibrary isInternetReachable]) {
+        
+        [self showAlertMessage:ERROR_NO_INTERNET_CONNECTION andMessage:nil andDelegate:nil];
+        
+    }
+    else
+    {
+        [self showAlertMessage:ERROR_GLOBAL_EXCEPTION andMessage:nil andDelegate:nil];
+        
+    }
 }
 
 - (IBAction)getCurrentLocation:(id)sender
