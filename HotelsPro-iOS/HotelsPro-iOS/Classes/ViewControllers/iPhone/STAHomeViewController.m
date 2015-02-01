@@ -19,6 +19,7 @@
 #import "HACollectionViewSmallLayout.h"
 #import "HASmallCollectionViewController.h"
 #import "HATransitionController.h"
+#import "STADatePickerViewController.h"
 
 
 #define kDateFormat                  @"dd/MM/yyyy"
@@ -31,13 +32,17 @@
 @property (weak, nonatomic) IBOutlet UITextField *checkOutTextField;
 @property (weak, nonatomic) IBOutlet UITextField *latitudeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *longitude;
+
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UIButton *checkInButton;
+@property (weak, nonatomic) IBOutlet UIButton *checkOutButton;
+
 @property (nonatomic, strong) CLLocationManager         *locationManager;
 @property (nonatomic) HATransitionController *transitionController;
 
 
-
 - (IBAction)searchButtonAction:(id)sender;
+- (IBAction)presentDatePicker:(id)sender;
 
 @end
 
@@ -142,6 +147,38 @@
     
 }
 
+- (void)presentDatePicker:(id)sender {
+    
+    UIButton *datePickerButton = (UIButton *)sender;
+    
+    UIStoryboard *storboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    STADatePickerViewController *_datePickerVC = [storboard instantiateViewControllerWithIdentifier:@"datePickerVC"];
+    _datePickerVC.dateSelectionType = datePickerButton.tag;
+    
+    [_datePickerVC setDoneButtonCompletionBlock:^(NSString *selectedDateString, enum STADatePickerSelectionType dateSelectionType){
+       
+        if (dateSelectionType == STADatePickerSelectionTypeCheckin) {
+            
+            [self.checkinTextField setText:selectedDateString];
+            [self.checkInButton setTitle:@"" forState:UIControlStateNormal];
+        }
+        else {
+            
+            [self.checkOutTextField setText:selectedDateString];
+            [self.checkOutButton setTitle:@"" forState:UIControlStateNormal];
+        }
+    }];
+    
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] < 8.0) {
+        _datePickerVC.modalPresentationStyle = UIModalPresentationCurrentContext;
+    }
+    else {
+        _datePickerVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    }
+    [self presentViewController:_datePickerVC animated:YES completion:nil];
+}
+
+#pragma mark - LocationManager
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
