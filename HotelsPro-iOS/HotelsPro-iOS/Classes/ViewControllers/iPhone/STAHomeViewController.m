@@ -16,12 +16,15 @@
 #import <STAUtil/STAUtility.h>
 #import "STAConstants.h"
 #import <STAServices/STAHotel.h>
+#import "HACollectionViewSmallLayout.h"
+#import "HASmallCollectionViewController.h"
+#import "HATransitionController.h"
 
 
 #define kDateFormat                  @"dd/MM/yyyy"
 
 
-@interface STAHomeViewController ()<UITextFieldDelegate, STAServiceLibraryDelegate,CLLocationManagerDelegate>
+@interface STAHomeViewController ()<UITextFieldDelegate, STAServiceLibraryDelegate,CLLocationManagerDelegate,HATransitionControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *locationTextField;
 @property (weak, nonatomic) IBOutlet UITextField *checkinTextField;
@@ -30,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *longitude;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (nonatomic, strong) CLLocationManager         *locationManager;
+@property (nonatomic) HATransitionController *transitionController;
 
 
 
@@ -44,8 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      _locationManager = [[CLLocationManager alloc] init];
-    STAHotelDetailsViewController *hotelDetailsViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HotelDetailsViewController"];
-     //[[self navigationController] pushViewController:hotelDetailsViewController animated:YES];
+   
 }
 
 #pragma mark - IBAction Methods
@@ -96,9 +99,11 @@
         [self showAlertMessage:@"sorry! Please try someother location" andMessage:nil andDelegate:nil];
         return;
     }
-    STARoomDetailsViewController *roomDetailsVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
-    [roomDetailsVC setRoomDetailsArray:[(STAHotel *)[(STAHotelDetails *)response hotels][0] rooms]];
-    [[self navigationController] pushViewController:roomDetailsVC animated:YES];
+//    STARoomDetailsViewController *roomDetailsVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomDetailsViewController"];
+//    [roomDetailsVC setRoomDetailsArray:[(STAHotel *)[(STAHotelDetails *)response hotels][0] rooms]];
+    HAPaperCollectionViewController *vc = [self showHotelDetailView];
+    [vc setHomeDetails:hotelDetails];
+    [[self navigationController] pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveError:(STAObject *)errorresponse
@@ -207,4 +212,63 @@
                                                    otherButtonTitles:nil];
     [errorAlertView show];
 }
+
+-(HASmallCollectionViewController *)showHotelDetailView
+{
+    HACollectionViewSmallLayout *smallLayout = [[HACollectionViewSmallLayout alloc] init];
+    HASmallCollectionViewController *collectionViewController = [[HASmallCollectionViewController alloc] initWithCollectionViewLayout:smallLayout];
+    
+    self.transitionController = [[HATransitionController alloc] initWithCollectionView:collectionViewController.collectionView];
+    self.transitionController.delegate = self;
+    
+    return collectionViewController;
+}
+
+
+
+- (void)interactionBeganAtPoint:(CGPoint)point
+{
+    // Very basic communication between the transition controller and the top view controller
+    // It would be easy to add more control, support pop, push or no-op
+    HASmallCollectionViewController *presentingVC = (HASmallCollectionViewController *)[self.navigationController topViewController];
+    HASmallCollectionViewController *presentedVC = (HASmallCollectionViewController *)[presentingVC nextViewControllerAtPoint:point];
+    if (presentedVC!=nil)
+    {
+        [self.navigationController pushViewController:presentedVC animated:YES];
+    }
+    else
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+
+- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                          interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
+{
+    if (animationController==self.transitionController) {
+        return self.transitionController;
+    }
+    return nil;
+}
+
+
+- (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                fromViewController:(UIViewController *)fromVC
+                                                  toViewController:(UIViewController *)toVC
+{
+    if (![fromVC isKindOfClass:[UICollectionViewController class]] || ![toVC isKindOfClass:[UICollectionViewController class]])
+    {
+        return nil;
+    }
+    if (!self.transitionController.hasActiveInteraction)
+    {
+        return nil;
+    }
+    
+    self.transitionController.navigationOperation = operation;
+    return self.transitionController;
+}
+
 @end

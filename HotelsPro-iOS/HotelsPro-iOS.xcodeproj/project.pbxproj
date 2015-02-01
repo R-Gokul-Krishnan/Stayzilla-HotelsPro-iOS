@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4A6C95861A7DA03700C29A56 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6C95851A7DA03700C29A56 /* CoreLocation.framework */; };
+		4A6C95941A7DB36D00C29A56 /* HACollectionViewLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C95881A7DB36D00C29A56 /* HACollectionViewLargeLayout.m */; };
+		4A6C95951A7DB36D00C29A56 /* HACollectionViewSmallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C958A1A7DB36D00C29A56 /* HACollectionViewSmallLayout.m */; };
+		4A6C95961A7DB36D00C29A56 /* HAPaperCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C958C1A7DB36D00C29A56 /* HAPaperCollectionViewController.m */; };
+		4A6C95971A7DB36D00C29A56 /* HASmallCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C958E1A7DB36D00C29A56 /* HASmallCollectionViewController.m */; };
+		4A6C95981A7DB36D00C29A56 /* HATransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C95901A7DB36D00C29A56 /* HATransitionController.m */; };
+		4A6C95991A7DB36D00C29A56 /* HATransitionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C95921A7DB36D00C29A56 /* HATransitionLayout.m */; };
+		4A6C959A1A7DB36D00C29A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C95931A7DB36D00C29A56 /* Images.xcassets */; };
 		5357161D1A7D73F900FF2151 /* STAServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5357161B1A7D73F900FF2151 /* STAServices.framework */; };
 		5357161E1A7D73F900FF2151 /* STAUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5357161C1A7D73F900FF2151 /* STAUtil.framework */; };
 		535716201A7D74D800FF2151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5357161F1A7D74D800FF2151 /* SystemConfiguration.framework */; };
@@ -53,6 +60,19 @@
 /* Begin PBXFileReference section */
 		4A6C95841A7DA02900C29A56 /* STAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAConstants.h; sourceTree = "<group>"; };
 		4A6C95851A7DA03700C29A56 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4A6C95871A7DB36D00C29A56 /* HACollectionViewLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACollectionViewLargeLayout.h; sourceTree = "<group>"; };
+		4A6C95881A7DB36D00C29A56 /* HACollectionViewLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACollectionViewLargeLayout.m; sourceTree = "<group>"; };
+		4A6C95891A7DB36D00C29A56 /* HACollectionViewSmallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACollectionViewSmallLayout.h; sourceTree = "<group>"; };
+		4A6C958A1A7DB36D00C29A56 /* HACollectionViewSmallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACollectionViewSmallLayout.m; sourceTree = "<group>"; };
+		4A6C958B1A7DB36D00C29A56 /* HAPaperCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAPaperCollectionViewController.h; sourceTree = "<group>"; };
+		4A6C958C1A7DB36D00C29A56 /* HAPaperCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAPaperCollectionViewController.m; sourceTree = "<group>"; };
+		4A6C958D1A7DB36D00C29A56 /* HASmallCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASmallCollectionViewController.h; sourceTree = "<group>"; };
+		4A6C958E1A7DB36D00C29A56 /* HASmallCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASmallCollectionViewController.m; sourceTree = "<group>"; };
+		4A6C958F1A7DB36D00C29A56 /* HATransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HATransitionController.h; sourceTree = "<group>"; };
+		4A6C95901A7DB36D00C29A56 /* HATransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HATransitionController.m; sourceTree = "<group>"; };
+		4A6C95911A7DB36D00C29A56 /* HATransitionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HATransitionLayout.h; sourceTree = "<group>"; };
+		4A6C95921A7DB36D00C29A56 /* HATransitionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HATransitionLayout.m; sourceTree = "<group>"; };
+		4A6C95931A7DB36D00C29A56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5357161B1A7D73F900FF2151 /* STAServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STAServices.framework; sourceTree = "<group>"; };
 		5357161C1A7D73F900FF2151 /* STAUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STAUtil.framework; sourceTree = "<group>"; };
 		5357161F1A7D74D800FF2151 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -251,6 +271,19 @@
 		53A375C41A7CD61A0043B85F /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				4A6C95871A7DB36D00C29A56 /* HACollectionViewLargeLayout.h */,
+				4A6C95881A7DB36D00C29A56 /* HACollectionViewLargeLayout.m */,
+				4A6C95891A7DB36D00C29A56 /* HACollectionViewSmallLayout.h */,
+				4A6C958A1A7DB36D00C29A56 /* HACollectionViewSmallLayout.m */,
+				4A6C958B1A7DB36D00C29A56 /* HAPaperCollectionViewController.h */,
+				4A6C958C1A7DB36D00C29A56 /* HAPaperCollectionViewController.m */,
+				4A6C958D1A7DB36D00C29A56 /* HASmallCollectionViewController.h */,
+				4A6C958E1A7DB36D00C29A56 /* HASmallCollectionViewController.m */,
+				4A6C958F1A7DB36D00C29A56 /* HATransitionController.h */,
+				4A6C95901A7DB36D00C29A56 /* HATransitionController.m */,
+				4A6C95911A7DB36D00C29A56 /* HATransitionLayout.h */,
+				4A6C95921A7DB36D00C29A56 /* HATransitionLayout.m */,
+				4A6C95931A7DB36D00C29A56 /* Images.xcassets */,
 				53A376061A7CD73F0043B85F /* STAHomeViewController.h */,
 				53A376071A7CD73F0043B85F /* STAHomeViewController.m */,
 				B60DD6DB1A7D1D3A00107291 /* ViewController.h */,
@@ -422,6 +455,7 @@
 				53A3761C1A7CD8E40043B85F /* star_highlighted-darker@2x.png in Resources */,
 				53A3761B1A7CD8E40043B85F /* star_highlighted-darker.png in Resources */,
 				53A375A11A7CD1DE0043B85F /* LaunchScreen.xib in Resources */,
+				4A6C959A1A7DB36D00C29A56 /* Images.xcassets in Resources */,
 				53A3761D1A7CD8E40043B85F /* star_highlighted.png in Resources */,
 				53A3759E1A7CD1DE0043B85F /* Images.xcassets in Resources */,
 			);
@@ -442,6 +476,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60DD6E31A7D1D8200107291 /* STAHotelDetailsViewController.m in Sources */,
+				4A6C95941A7DB36D00C29A56 /* HACollectionViewLargeLayout.m in Sources */,
+				4A6C95961A7DB36D00C29A56 /* HAPaperCollectionViewController.m in Sources */,
 				53A3761F1A7CD8E40043B85F /* UIView+Subviews.m in Sources */,
 				B60DD6D81A7D1D0E00107291 /* STADistanceTableViewCell.m in Sources */,
 				53A375C51A7CD61A0043B85F /* SHPBaseViewController.m in Sources */,
@@ -449,13 +485,17 @@
 				53A376081A7CD73F0043B85F /* STAHomeViewController.m in Sources */,
 				B60DD6D61A7D1D0E00107291 /* STABannerTableViewCell.m in Sources */,
 				53A376181A7CD8E40043B85F /* DLStarView.m in Sources */,
+				4A6C95971A7DB36D00C29A56 /* HASmallCollectionViewController.m in Sources */,
 				B60DD6D71A7D1D0E00107291 /* STAAddressTableViewCell.m in Sources */,
 				53A375931A7CD1DE0043B85F /* main.m in Sources */,
 				53A376171A7CD8E40043B85F /* DLStarRatingControl.m in Sources */,
 				B60DD6D91A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m in Sources */,
+				4A6C95951A7DB36D00C29A56 /* HACollectionViewSmallLayout.m in Sources */,
+				4A6C95991A7DB36D00C29A56 /* HATransitionLayout.m in Sources */,
 				B60DD6E01A7D1D3A00107291 /* STARoomDetailsViewController.m in Sources */,
 				53A376261A7CD9BA0043B85F /* MBProgressHUD.m in Sources */,
 				B60DD6DF1A7D1D3A00107291 /* ViewController.m in Sources */,
+				4A6C95981A7DB36D00C29A56 /* HATransitionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

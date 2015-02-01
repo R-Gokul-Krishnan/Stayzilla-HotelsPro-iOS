@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5ay-QK-jC0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5ay-QK-jC0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -849,6 +849,8 @@
                                 <exclude reference="sC7-ZQ-fAE"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="WSe-wh-kni"/>
+                                <exclude reference="iND-v3-e8L"/>
                                 <exclude reference="HFD-IO-Swl"/>
                                 <exclude reference="moM-gT-WsC"/>
                                 <exclude reference="rKT-bZ-AdQ"/>
@@ -859,8 +861,6 @@
                                 <exclude reference="brh-Q1-QkH"/>
                                 <exclude reference="gJ5-FW-uB5"/>
                                 <exclude reference="uew-Oz-uFK"/>
-                                <exclude reference="WSe-wh-kni"/>
-                                <exclude reference="iND-v3-e8L"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -870,6 +870,8 @@
                                 <include reference="sC7-ZQ-fAE"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="WSe-wh-kni"/>
+                                <include reference="iND-v3-e8L"/>
                                 <include reference="HFD-IO-Swl"/>
                                 <include reference="moM-gT-WsC"/>
                                 <include reference="rKT-bZ-AdQ"/>
@@ -880,8 +882,6 @@
                                 <include reference="brh-Q1-QkH"/>
                                 <include reference="gJ5-FW-uB5"/>
                                 <include reference="uew-Oz-uFK"/>
-                                <include reference="WSe-wh-kni"/>
-                                <include reference="iND-v3-e8L"/>
                             </mask>
                         </variation>
                     </view>
@@ -890,6 +890,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXz-ZL-bXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2519.25" y="190.5"/>
+        </scene>
+        <!--Small Collection View Controller-->
+        <scene sceneID="frv-80-tvj">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="CAd-Nr-IIU" customClass="HASmallCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="dxC-Qu-NbS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sIr-fA-X3o">
+                            <size key="itemSize" width="379" height="523"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CELL_ID" id="4r4-2V-I4K">
+                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="379" height="523"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="CAd-Nr-IIU" id="8Ps-ji-HvC"/>
+                            <outlet property="delegate" destination="CAd-Nr-IIU" id="OoB-8c-G2d"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="mNo-n4-Ew0"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rH-Rq-QqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.5" y="1743"/>
         </scene>
     </scenes>
     <resources>
