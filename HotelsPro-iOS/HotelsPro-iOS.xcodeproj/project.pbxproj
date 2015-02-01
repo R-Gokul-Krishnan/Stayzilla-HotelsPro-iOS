@@ -128,6 +128,7 @@
 		53956CDC1A7D6A3A00B6B389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A6C95851A7DA03700C29A56 /* CoreLocation.framework */,
 				5357161F1A7D74D800FF2151 /* SystemConfiguration.framework */,
 				5357161B1A7D73F900FF2151 /* STAServices.framework */,
 				5357161C1A7D73F900FF2151 /* STAUtil.framework */,
@@ -138,7 +139,6 @@
 		53A375841A7CD1DE0043B85F = {
 			isa = PBXGroup;
 			children = (
-				4A6C95851A7DA03700C29A56 /* CoreLocation.framework */,
 				53A3758F1A7CD1DE0043B85F /* HotelsPro-iOS */,
 				53A375A91A7CD1DF0043B85F /* HotelsPro-iOSTests */,
 				53A3758E1A7CD1DE0043B85F /* Products */,

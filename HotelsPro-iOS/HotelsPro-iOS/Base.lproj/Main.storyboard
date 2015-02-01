@@ -629,6 +629,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BalconyViewBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="HrR-3j-3tb" userLabel="Image View-BG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="px0-4f-wdx" userLabel="View-Header">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -827,20 +830,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="px0-4f-wdx" secondAttribute="trailing" id="Cbx-uK-SPj"/>
+                            <constraint firstItem="HrR-3j-3tb" firstAttribute="top" secondItem="B4g-4a-EPd" secondAttribute="top" id="HFD-IO-Swl"/>
                             <constraint firstItem="px0-4f-wdx" firstAttribute="top" secondItem="B4g-4a-EPd" secondAttribute="top" id="Mge-rF-Gfh"/>
                             <constraint firstItem="E8d-sS-taT" firstAttribute="top" secondItem="sC7-ZQ-fAE" secondAttribute="bottom" id="WSe-wh-kni"/>
                             <constraint firstItem="px0-4f-wdx" firstAttribute="top" secondItem="WUa-Cl-966" secondAttribute="bottom" id="WU1-YR-0t2"/>
                             <constraint firstAttribute="trailing" secondItem="sC7-ZQ-fAE" secondAttribute="trailing" id="brh-Q1-QkH"/>
                             <constraint firstItem="sC7-ZQ-fAE" firstAttribute="leading" secondItem="B4g-4a-EPd" secondAttribute="leading" id="gJ5-FW-uB5"/>
+                            <constraint firstItem="E8d-sS-taT" firstAttribute="top" secondItem="HrR-3j-3tb" secondAttribute="bottom" id="iND-v3-e8L"/>
+                            <constraint firstItem="HrR-3j-3tb" firstAttribute="leading" secondItem="B4g-4a-EPd" secondAttribute="leading" id="moM-gT-WsC"/>
+                            <constraint firstAttribute="trailing" secondItem="HrR-3j-3tb" secondAttribute="trailing" id="rKT-bZ-AdQ"/>
                             <constraint firstItem="px0-4f-wdx" firstAttribute="leading" secondItem="B4g-4a-EPd" secondAttribute="leading" id="rhs-TY-XSk"/>
                             <constraint firstItem="sC7-ZQ-fAE" firstAttribute="top" secondItem="px0-4f-wdx" secondAttribute="bottom" id="uew-Oz-uFK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="HrR-3j-3tb"/>
                                 <exclude reference="px0-4f-wdx"/>
                                 <exclude reference="sC7-ZQ-fAE"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="HFD-IO-Swl"/>
+                                <exclude reference="moM-gT-WsC"/>
+                                <exclude reference="rKT-bZ-AdQ"/>
                                 <exclude reference="Cbx-uK-SPj"/>
                                 <exclude reference="Mge-rF-Gfh"/>
                                 <exclude reference="WU1-YR-0t2"/>
@@ -849,14 +860,19 @@
                                 <exclude reference="gJ5-FW-uB5"/>
                                 <exclude reference="uew-Oz-uFK"/>
                                 <exclude reference="WSe-wh-kni"/>
+                                <exclude reference="iND-v3-e8L"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="HrR-3j-3tb"/>
                                 <include reference="px0-4f-wdx"/>
                                 <include reference="sC7-ZQ-fAE"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="HFD-IO-Swl"/>
+                                <include reference="moM-gT-WsC"/>
+                                <include reference="rKT-bZ-AdQ"/>
                                 <include reference="Cbx-uK-SPj"/>
                                 <exclude reference="Mge-rF-Gfh"/>
                                 <include reference="WU1-YR-0t2"/>
@@ -865,6 +881,7 @@
                                 <include reference="gJ5-FW-uB5"/>
                                 <include reference="uew-Oz-uFK"/>
                                 <include reference="WSe-wh-kni"/>
+                                <include reference="iND-v3-e8L"/>
                             </mask>
                         </variation>
                     </view>
@@ -876,6 +893,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BalconyViewBGImage" width="320" height="568"/>
         <image name="HomeBackground" width="375" height="667"/>
     </resources>
 </document>
