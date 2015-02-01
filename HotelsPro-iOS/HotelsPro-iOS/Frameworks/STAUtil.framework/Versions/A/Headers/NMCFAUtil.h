@@ -3,7 +3,7 @@
 //  UIUtil
 //
 //  Created by vijayaragavan on 06/05/13.
-//  Copyright (c) 2013 photon. All rights reserved.
+//  Copyright (c) 2013. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,7 +12,6 @@
 #import <STAUtil/HPlistLoader.h>
 #import <STAUtil/WSEnum.h>
 
-// see http://stackoverflow.com/questions/7017281/performselector-may-cause-a-leak-because-its-selector-is-unknown
 #define SuppressPerformSelectorLeakWarning(Stuff)                           \
 do                                                                      \
 {                                                                       \

@@ -3,7 +3,7 @@
 //  UIUtil
 //
 //  Created by vijayaragavan on 06/05/13.
-//  Copyright (c) 2013 photon. All rights reserved.
+//  Copyright (c) 2013. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

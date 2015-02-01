@@ -2,8 +2,7 @@
 //  UIImage+FromView.h
 //  HUtils
 //
-//  Created by Photon on 22/04/13.
-//  Copyright (c) 2013 photon. All rights reserved.
+//  Copyright (c) 2013. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

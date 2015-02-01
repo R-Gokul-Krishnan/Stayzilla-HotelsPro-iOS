@@ -3,7 +3,7 @@
 //  NMCFAUtil
 //
 //  Created by vijayaragavan on 30/06/14.
-//  Copyright (c) 2014 photon. All rights reserved.
+//  Copyright (c) 2014. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

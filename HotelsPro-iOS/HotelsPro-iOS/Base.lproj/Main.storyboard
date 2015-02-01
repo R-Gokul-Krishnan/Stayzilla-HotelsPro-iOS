@@ -576,37 +576,65 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7po-No-Q8c" id="Xon-9W-ghG">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4m-q1-sCv">
-                                                    <rect key="frame" x="0.0" y="1" width="320" height="219"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-Qk-0X7" userLabel="View-ImageContainer">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-Qk-0X7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMX-7z-0bS" userLabel="View-Rating">
+                                                            <rect key="frame" x="168" y="208" width="164" height="65"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-Xx-84L">
+                                                                    <rect key="frame" x="20" y="20" width="25" height="25"/>
+                                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                    </variation>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-u5-RR2">
+                                                                    <rect key="frame" x="46" y="20" width="25" height="25"/>
+                                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                                        <rect key="frame" x="26" y="0.0" width="25" height="25"/>
+                                                                    </variation>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJ2-6z-3K9">
+                                                                    <rect key="frame" x="70" y="20" width="25" height="25"/>
+                                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                                        <rect key="frame" x="50" y="0.0" width="25" height="25"/>
+                                                                    </variation>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fib-Av-VD4">
+                                                                    <rect key="frame" x="94" y="20" width="25" height="25"/>
+                                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                                        <rect key="frame" x="74" y="0.0" width="25" height="25"/>
+                                                                    </variation>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5S-Gz-mN0">
+                                                                    <rect key="frame" x="119" y="20" width="25" height="25"/>
+                                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                                        <rect key="frame" x="99" y="0.0" width="25" height="25"/>
+                                                                    </variation>
+                                                                </imageView>
+                                                            </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="320" id="beQ-gf-7fg"/>
-                                                                <constraint firstAttribute="height" constant="219" id="pVl-wq-vj4"/>
-                                                            </constraints>
+                                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="187" y="147" width="125" height="25"/>
+                                                            </variation>
                                                         </view>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="219" id="0j5-bI-Atm"/>
-                                                        <constraint firstItem="CxU-Qk-0X7" firstAttribute="top" secondItem="d4m-q1-sCv" secondAttribute="top" id="4hd-vh-JI3"/>
-                                                        <constraint firstAttribute="bottom" secondItem="CxU-Qk-0X7" secondAttribute="bottom" id="NRE-xT-Qp7"/>
-                                                        <constraint firstAttribute="trailing" secondItem="CxU-Qk-0X7" secondAttribute="trailing" id="UAf-v4-onR"/>
-                                                        <constraint firstItem="CxU-Qk-0X7" firstAttribute="leading" secondItem="d4m-q1-sCv" secondAttribute="leading" id="p6s-RV-eQl"/>
-                                                    </constraints>
-                                                </scrollView>
-                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Moq-Bh-zyB">
-                                                    <rect key="frame" x="141" y="222" width="39" height="37"/>
-                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="37" id="taU-TL-9p3"/>
-                                                        <constraint firstAttribute="width" constant="39" id="xon-Wh-oR9"/>
-                                                    </constraints>
-                                                </pageControl>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <variation key="default">
+                                                        <mask key="subviews">
+                                                            <exclude reference="qMX-7z-0bS"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="0.0" y="21" width="320" height="219"/>
+                                                        <mask key="subviews">
+                                                            <include reference="qMX-7z-0bS"/>
+                                                        </mask>
+                                                    </variation>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Hotel name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESK-7d-C8P">
                                                     <rect key="frame" x="0.0" y="190" width="320" height="31"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="31" id="YO7-Sn-ily"/>
                                                     </constraints>
@@ -614,21 +642,6 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-Xx-84L">
-                                                    <rect key="frame" x="188" y="228" width="25" height="25"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-u5-RR2">
-                                                    <rect key="frame" x="214" y="228" width="25" height="25"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJ2-6z-3K9">
-                                                    <rect key="frame" x="238" y="228" width="25" height="25"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fib-Av-VD4">
-                                                    <rect key="frame" x="262" y="228" width="25" height="25"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5S-Gz-mN0">
-                                                    <rect key="frame" x="287" y="228" width="25" height="25"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-kI-0hq">
                                                     <rect key="frame" x="14" y="231" width="119" height="21"/>
                                                     <constraints>
@@ -641,25 +654,26 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="ESK-7d-C8P" secondAttribute="bottom" constant="39" id="5UR-UT-rmF"/>
-                                                <constraint firstAttribute="centerX" secondItem="Moq-Bh-zyB" secondAttribute="centerX" id="5XF-DG-Qtv"/>
-                                                <constraint firstAttribute="trailing" secondItem="d4m-q1-sCv" secondAttribute="trailing" id="6xu-eD-iS7"/>
-                                                <constraint firstItem="d4m-q1-sCv" firstAttribute="top" secondItem="Xon-9W-ghG" secondAttribute="top" constant="1" id="DId-Xa-MRq"/>
-                                                <constraint firstItem="Moq-Bh-zyB" firstAttribute="leading" secondItem="ahw-kI-0hq" secondAttribute="trailing" constant="8" id="GEP-fN-IZY"/>
-                                                <constraint firstAttribute="bottom" secondItem="Moq-Bh-zyB" secondAttribute="bottom" constant="1" id="PjS-xJ-ZNG"/>
                                                 <constraint firstItem="ahw-kI-0hq" firstAttribute="leading" secondItem="Xon-9W-ghG" secondAttribute="leading" constant="14" id="iT9-xu-z9j"/>
                                                 <constraint firstItem="ESK-7d-C8P" firstAttribute="leading" secondItem="Xon-9W-ghG" secondAttribute="leading" id="qfs-VU-iPx"/>
                                                 <constraint firstAttribute="bottom" secondItem="ahw-kI-0hq" secondAttribute="bottom" constant="8" id="udW-ZI-5al"/>
-                                                <constraint firstItem="d4m-q1-sCv" firstAttribute="leading" secondItem="Xon-9W-ghG" secondAttribute="leading" id="yGG-Hx-e1o"/>
                                                 <constraint firstAttribute="trailing" secondItem="ESK-7d-C8P" secondAttribute="trailing" id="yU8-0Q-Xnb"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="CxU-Qk-0X7"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="CxU-Qk-0X7"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="ImageContainerScrollView" destination="d4m-q1-sCv" id="Vcm-JF-DZB"/>
                                             <outlet property="cityNameLabel" destination="ahw-kI-0hq" id="BfC-me-ARs"/>
-                                            <outlet property="galleryPageControl" destination="Moq-Bh-zyB" id="eql-TQ-wZ5"/>
                                             <outlet property="hotelNameLabel" destination="ESK-7d-C8P" id="hft-nU-FP3"/>
                                             <outlet property="imageContainerView" destination="CxU-Qk-0X7" id="Uzb-jQ-zTM"/>
-                                            <outlet property="imageContainerViewWidthConstraint" destination="beQ-gf-7fg" id="mMd-xf-2CB"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressTableViewCellIdentifier" rowHeight="84" id="8ce-c1-l7y" customClass="STAAddressTableViewCell">
@@ -1322,17 +1336,7 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CELL_ID" id="4r4-2V-I4K">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="379" height="523"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="CAd-Nr-IIU" id="8Ps-ji-HvC"/>
                             <outlet property="delegate" destination="CAd-Nr-IIU" id="OoB-8c-G2d"/>

@@ -2,9 +2,6 @@
 //  HPlistLoader.h
 //  HeliosNavigation
 //
-//  Created by Amar Ellareddy on 25/04/13.
-//  Copyright (c) 2013 photon. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 

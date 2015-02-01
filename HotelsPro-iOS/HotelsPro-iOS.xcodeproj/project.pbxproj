@@ -38,6 +38,9 @@
 		53A376271A7CD9BA0043B85F /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A376241A7CD9BA0043B85F /* 37x-Checkmark.png */; };
 		53A376281A7CD9BA0043B85F /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A376251A7CD9BA0043B85F /* 37x-Checkmark@2x.png */; };
 		53B298E71A7DE9D600534084 /* STADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B298E61A7DE9D600534084 /* STADatePickerViewController.m */; };
+		53B298EA1A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B298E91A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.m */; };
+		53B298ED1A7DF65F00534084 /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B298EC1A7DF65F00534084 /* SimpleView.m */; };
+		53B298EF1A7DF67500534084 /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B298EE1A7DF67500534084 /* SimpleView.xib */; };
 		B60DD6D61A7D1D0E00107291 /* STABannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6CF1A7D1D0E00107291 /* STABannerTableViewCell.m */; };
 		B60DD6D71A7D1D0E00107291 /* STAAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D11A7D1D0E00107291 /* STAAddressTableViewCell.m */; };
 		B60DD6D81A7D1D0E00107291 /* STADistanceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DD6D31A7D1D0E00107291 /* STADistanceTableViewCell.m */; };
@@ -108,6 +111,11 @@
 		53A376251A7CD9BA0043B85F /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
 		53B298E51A7DE9D600534084 /* STADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STADatePickerViewController.h; sourceTree = "<group>"; };
 		53B298E61A7DE9D600534084 /* STADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STADatePickerViewController.m; sourceTree = "<group>"; };
+		53B298E81A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAHotelDetailCollectionViewCell.h; sourceTree = "<group>"; };
+		53B298E91A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAHotelDetailCollectionViewCell.m; sourceTree = "<group>"; };
+		53B298EB1A7DF65F00534084 /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleView.h; sourceTree = "<group>"; };
+		53B298EC1A7DF65F00534084 /* SimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleView.m; sourceTree = "<group>"; };
+		53B298EE1A7DF67500534084 /* SimpleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleView.xib; sourceTree = "<group>"; };
 		B60DD6CE1A7D1D0E00107291 /* STABannerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STABannerTableViewCell.h; sourceTree = "<group>"; };
 		B60DD6CF1A7D1D0E00107291 /* STABannerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STABannerTableViewCell.m; sourceTree = "<group>"; };
 		B60DD6D01A7D1D0E00107291 /* STAAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAAddressTableViewCell.h; sourceTree = "<group>"; };
@@ -297,6 +305,9 @@
 				B60DD6E21A7D1D8200107291 /* STAHotelDetailsViewController.m */,
 				53B298E51A7DE9D600534084 /* STADatePickerViewController.h */,
 				53B298E61A7DE9D600534084 /* STADatePickerViewController.m */,
+				53B298EB1A7DF65F00534084 /* SimpleView.h */,
+				53B298EC1A7DF65F00534084 /* SimpleView.m */,
+				53B298EE1A7DF67500534084 /* SimpleView.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -381,6 +392,8 @@
 				B60DD6D31A7D1D0E00107291 /* STADistanceTableViewCell.m */,
 				B60DD6D41A7D1D0E00107291 /* STARoomsDetailsTableViewCell.h */,
 				B60DD6D51A7D1D0E00107291 /* STARoomsDetailsTableViewCell.m */,
+				53B298E81A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.h */,
+				53B298E91A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -464,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B298EF1A7DF67500534084 /* SimpleView.xib in Resources */,
 				53A3761E1A7CD8E40043B85F /* star_highlighted@2x.png in Resources */,
 				53A3761A1A7CD8E40043B85F /* star@2x.png in Resources */,
 				53A376281A7CD9BA0043B85F /* 37x-Checkmark@2x.png in Resources */,
@@ -493,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60DD6E31A7D1D8200107291 /* STAHotelDetailsViewController.m in Sources */,
+				53B298EA1A7DF3AD00534084 /* STAHotelDetailCollectionViewCell.m in Sources */,
 				4A6C95941A7DB36D00C29A56 /* HACollectionViewLargeLayout.m in Sources */,
 				4A6C95961A7DB36D00C29A56 /* HAPaperCollectionViewController.m in Sources */,
 				53A3761F1A7CD8E40043B85F /* UIView+Subviews.m in Sources */,
@@ -511,6 +526,7 @@
 				4A6C95951A7DB36D00C29A56 /* HACollectionViewSmallLayout.m in Sources */,
 				4A6C95991A7DB36D00C29A56 /* HATransitionLayout.m in Sources */,
 				B60DD6E01A7D1D3A00107291 /* STARoomDetailsViewController.m in Sources */,
+				53B298ED1A7DF65F00534084 /* SimpleView.m in Sources */,
 				53A376261A7CD9BA0043B85F /* MBProgressHUD.m in Sources */,
 				B60DD6DF1A7D1D3A00107291 /* ViewController.m in Sources */,
 				4A6C95981A7DB36D00C29A56 /* HATransitionController.m in Sources */,

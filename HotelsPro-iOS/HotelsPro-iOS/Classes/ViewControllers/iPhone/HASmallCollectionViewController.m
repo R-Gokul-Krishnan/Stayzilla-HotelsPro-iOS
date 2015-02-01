@@ -5,7 +5,7 @@
 #import "HASmallCollectionViewController.h"
 #import "HACollectionViewLargeLayout.h"
 
-@interface HASmallCollectionViewController ()
+@interface HASmallCollectionViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) NSInteger slide;
 @property (nonatomic, strong) UIView *mainView;

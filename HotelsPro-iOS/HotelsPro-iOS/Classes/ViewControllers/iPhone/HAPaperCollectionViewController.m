@@ -5,6 +5,7 @@
 #import "HAPaperCollectionViewController.h"
 #import "HATransitionLayout.h"
 #import "STAHotelDetailsViewController.h"
+#import "STAHotelDetailCollectionViewCell.h"
 
 
 #define MAX_COUNT 20
@@ -25,7 +26,7 @@
   
         
         
-        [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CELL_ID];
+        [self.collectionView registerClass:[STAHotelDetailCollectionViewCell class] forCellWithReuseIdentifier:CELL_ID];
         [self.collectionView setBackgroundColor:[UIColor clearColor]];
         [[self collectionView] reloadData];
     }
@@ -40,13 +41,13 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *hotelCell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
+    STAHotelDetailCollectionViewCell *hotelCell = (STAHotelDetailCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
     hotelCell.backgroundColor = [UIColor whiteColor];
     hotelCell.layer.cornerRadius = 4;
     hotelCell.clipsToBounds = YES;
     
     STAHotel *hotel =  objectAtIndex([[self hotelDetails] hotels], indexPath.row);
-  
+    [hotelCell setupUI];
  
     
     return hotelCell;

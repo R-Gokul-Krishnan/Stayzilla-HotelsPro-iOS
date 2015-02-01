@@ -2,8 +2,7 @@
 //  NMCFAUtility.h
 //  NMCFAUtil
 //
-//  Created by Palani_AC on 16/05/13.
-//  Copyright (c) 2013 photon. All rights reserved.
+//  Copyright (c) 2013. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
